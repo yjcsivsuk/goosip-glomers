@@ -1,0 +1,18 @@
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin23/rbconfig.rb:21: warning: Insecure world writable dir /opt/homebrew/Cellar in PATH, mode 040777
+Online
+Received {:id=>2, :src=>"c3", :dest=>"n4", :body=>{:type=>"init", :node_id=>"n4", :node_ids=>["n1", "n2", "n3", "n4", "n5"], :msg_id=>1}}
+Initialized node n4
+Received {:id=>14, :src=>"c12", :dest=>"n4", :body=>{:echo=>"Please echo 120", :type=>"echo", :msg_id=>1}}
+Echoing {:echo=>"Please echo 120", :type=>"echo", :msg_id=>1}
+Received {:id=>16, :src=>"c12", :dest=>"n4", :body=>{:echo=>"Please echo 93", :type=>"echo", :msg_id=>2}}
+Echoing {:echo=>"Please echo 93", :type=>"echo", :msg_id=>2}
+Received {:id=>20, :src=>"c12", :dest=>"n4", :body=>{:echo=>"Please echo 35", :type=>"echo", :msg_id=>3}}
+Echoing {:echo=>"Please echo 35", :type=>"echo", :msg_id=>3}
+Received {:id=>34, :src=>"c12", :dest=>"n4", :body=>{:echo=>"Please echo 59", :type=>"echo", :msg_id=>4}}
+Echoing {:echo=>"Please echo 59", :type=>"echo", :msg_id=>4}
+Received {:id=>38, :src=>"c12", :dest=>"n4", :body=>{:echo=>"Please echo 7", :type=>"echo", :msg_id=>5}}
+Echoing {:echo=>"Please echo 7", :type=>"echo", :msg_id=>5}
+Received {:id=>46, :src=>"c12", :dest=>"n4", :body=>{:echo=>"Please echo 71", :type=>"echo", :msg_id=>6}}
+Echoing {:echo=>"Please echo 71", :type=>"echo", :msg_id=>6}
+Received {:id=>56, :src=>"c12", :dest=>"n4", :body=>{:echo=>"Please echo 58", :type=>"echo", :msg_id=>7}}
+Echoing {:echo=>"Please echo 58", :type=>"echo", :msg_id=>7}

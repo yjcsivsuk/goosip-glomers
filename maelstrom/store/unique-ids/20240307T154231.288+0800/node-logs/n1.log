@@ -1,0 +1,5 @@
+2024/03/07 15:42:32 Received {c2 n1 {"type":"init","node_id":"n1","node_ids":["n1","n2","n3","n4","n5"],"msg_id":1}}
+2024/03/07 15:42:32 Node n1 initialized
+2024/03/07 15:42:32 Sent {"src":"n1","dest":"c2","body":{"in_reply_to":1,"type":"init_ok"}}
+2024/03/07 15:42:32 Received {c10 n1 {"type":"generate","msg_id":1}}
+2024/03/07 15:42:32 ERROR: No handler for {"id":10,"src":"c10","dest":"n1","body":{"type":"generate","msg_id":1}}

@@ -1,0 +1,10 @@
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin23/rbconfig.rb:21: warning: Insecure world writable dir /opt/homebrew/Cellar in PATH, mode 040777
+Online
+Received {:id=>2, :src=>"c2", :dest=>"n3", :body=>{:type=>"init", :node_id=>"n3", :node_ids=>["n1", "n2", "n3", "n4", "n5"], :msg_id=>1}}
+Initialized node n3
+Received {:id=>10, :src=>"c10", :dest=>"n3", :body=>{:echo=>"Please echo 76", :type=>"echo", :msg_id=>1}}
+Echoing {:echo=>"Please echo 76", :type=>"echo", :msg_id=>1}
+Received {:id=>12, :src=>"c10", :dest=>"n3", :body=>{:echo=>"Please echo 121", :type=>"echo", :msg_id=>2}}
+Echoing {:echo=>"Please echo 121", :type=>"echo", :msg_id=>2}
+Received {:id=>50, :src=>"c10", :dest=>"n3", :body=>{:echo=>"Please echo 20", :type=>"echo", :msg_id=>3}}
+Echoing {:echo=>"Please echo 20", :type=>"echo", :msg_id=>3}

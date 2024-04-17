@@ -1,0 +1,165 @@
+2024-03-07 19:22:21,547{GMT}	INFO	[jepsen test runner] jepsen.core: Command line:
+lein run test -w unique-ids --bin /Users/lihaoyang/go/bin/maelstrom-unique-ids --time-limit 30 --rate 1000 --node-count 3 --availability total --nemesis partition
+2024-03-07 19:22:21,596{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+{:args []
+ :remote
+ #jepsen.control.retry.Remote{:remote #jepsen.control.scp.Remote{:cmd-remote #jepsen.control.sshj.SSHJRemote{:concurrency-limit 6,
+                                                                                                             :conn-spec nil,
+                                                                                                             :client nil,
+                                                                                                             :semaphore nil},
+                                                                 :conn-spec nil},
+                              :conn nil}
+ :log-net-send false
+ :node-count 3
+ :availability :total
+ :max-txn-length 4
+ :concurrency 3
+ :db
+ #object[maelstrom.db$db$reify__16142
+         "0x49de1717"
+         "maelstrom.db$db$reify__16142@49de1717"]
+ :max-writes-per-key 16
+ :leave-db-running? false
+ :name "unique-ids"
+ :logging-json? false
+ :start-time
+ #object[org.joda.time.DateTime "0x2a71d430" "2024-03-07T19:22:21.511+08:00"]
+ :nemesis-interval 10
+ :net
+ #object[maelstrom.net$jepsen_net$reify__15251
+         "0xb0c4670"
+         "maelstrom.net$jepsen_net$reify__15251@b0c4670"]
+ :client
+ #object[maelstrom.workload.unique_ids$client$reify__20074
+         "0x5344b208"
+         "maelstrom.workload.unique_ids$client$reify__20074@5344b208"]
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier
+         "0x30769e7a"
+         "java.util.concurrent.CyclicBarrier@30769e7a"]
+ :log-stderr false
+ :pure-generators true
+ :ssh {:dummy? true}
+ :rate 1000.0
+ :checker
+ #object[jepsen.checker$compose$reify__11881
+         "0x14021c10"
+         "jepsen.checker$compose$reify__11881@14021c10"]
+ :argv
+ ("test"
+  "-w"
+  "unique-ids"
+  "--bin"
+  "/Users/lihaoyang/go/bin/maelstrom-unique-ids"
+  "--time-limit"
+  "30"
+  "--rate"
+  "1000"
+  "--node-count"
+  "3"
+  "--availability"
+  "total"
+  "--nemesis"
+  "partition")
+ :nemesis
+ (jepsen.nemesis.ReflCompose
+  {:fm {:start-partition 0,
+        :stop-partition 0,
+        :kill 1,
+        :start 1,
+        :pause 1,
+        :resume 1},
+   :nemeses [#unprintable "jepsen.nemesis.combined$partition_nemesis$reify__16416@7dd4f726"
+             #unprintable "jepsen.nemesis.combined$db_nemesis$reify__16397@bf6de66"]})
+ :nodes ["n0" "n1" "n2"]
+ :test-count 1
+ :latency {:mean 0, :dist :constant}
+ :bin "/Users/lihaoyang/go/bin/maelstrom-unique-ids"
+ :generator
+ (jepsen.generator.TimeLimit
+  {:limit 30000000000,
+   :cutoff nil,
+   :gen (jepsen.generator.Any
+         {:gens [(jepsen.generator.OnThreads
+                  {:f #{:nemesis},
+                   :context-filter #object[jepsen.generator.context$make_thread_filter$lazy_filter__9167
+                                           "0x5dd2e62a"
+                                           "jepsen.generator.context$make_thread_filter$lazy_filter__9167@5dd2e62a"],
+                   :gen (jepsen.generator.Stagger
+                         {:dt 20000000000,
+                          :next-time nil,
+                          :gen (jepsen.generator.FlipFlop
+                                {:gens [#object[jepsen.nemesis.combined$partition_package$start__16420
+                                                "0x2339ad10"
+                                                "jepsen.nemesis.combined$partition_package$start__16420@2339ad10"]
+                                        ({:type :info,
+                                          :f :stop-partition,
+                                          :value nil}
+                                         {:type :info,
+                                          :f :stop-partition,
+                                          :value nil}
+                                         {:type :info,
+                                          :f :stop-partition,
+                                          :value nil}
+                                         {:type :info,
+                                          :f :stop-partition,
+                                          :value nil}
+                                         {:type :info,
+                                          :f :stop-partition,
+                                          :value nil}
+                                         {:type :info,
+                                          :f :stop-partition,
+                                          :value nil}
+                                         {:type :info,
+                                          :f :stop-partition,
+                                          :value nil}
+                                         {:type :info,
+                                          :f :stop-partition,
+                                          :value nil}
+                                         ...)],
+                                 :i 0})})})
+                 (jepsen.generator.OnThreads
+                  {:f #jepsen.generator.context.AllBut{:element :nemesis},
+                   :context-filter #object[jepsen.generator.context$make_thread_filter$lazy_filter__9167
+                                           "0x74c3374f"
+                                           "jepsen.generator.context$make_thread_filter$lazy_filter__9167@74c3374f"],
+                   :gen (jepsen.generator.Stagger
+                         {:dt 2000000,
+                          :next-time nil,
+                          :gen (jepsen.generator.Repeat
+                                {:remaining -1, :gen {:f :generate}})})})]})})
+ :log-net-recv false
+ :os
+ #object[maelstrom.net$jepsen_os$reify__15254
+         "0x3eea7c4b"
+         "maelstrom.net$jepsen_os$reify__15254@3eea7c4b"]
+ :time-limit 30
+ :workload :unique-ids
+ :consistency-models [:strict-serializable]
+ :topology :grid}
+
+2024-03-07 19:22:22,592{GMT}	INFO	[jepsen node n0] maelstrom.net: Starting Maelstrom network
+2024-03-07 19:22:22,593{GMT}	INFO	[jepsen test runner] jepsen.db: Tearing down DB
+2024-03-07 19:22:22,593{GMT}	INFO	[jepsen test runner] jepsen.db: Setting up DB
+2024-03-07 19:22:22,594{GMT}	INFO	[jepsen node n1] maelstrom.db: Setting up n1
+2024-03-07 19:22:22,594{GMT}	INFO	[jepsen node n2] maelstrom.db: Setting up n2
+2024-03-07 19:22:22,594{GMT}	INFO	[jepsen node n1] maelstrom.process: launching /Users/lihaoyang/go/bin/maelstrom-unique-ids []
+2024-03-07 19:22:22,594{GMT}	INFO	[jepsen node n2] maelstrom.process: launching /Users/lihaoyang/go/bin/maelstrom-unique-ids []
+2024-03-07 19:22:22,595{GMT}	INFO	[jepsen node n0] maelstrom.service: Starting services: (lin-kv lin-tso lww-kv seq-kv)
+2024-03-07 19:22:22,596{GMT}	INFO	[jepsen node n0] maelstrom.db: Setting up n0
+2024-03-07 19:22:22,597{GMT}	INFO	[jepsen node n0] maelstrom.process: launching /Users/lihaoyang/go/bin/maelstrom-unique-ids []
+2024-03-07 19:22:22,618{GMT}	INFO	[jepsen test runner] jepsen.core: Relative time begins now
+2024-03-07 19:22:22,630{GMT}	INFO	[jepsen worker nemesis] jepsen.util: :nemesis	:info	:start-partition	:one
+2024-03-07 19:22:22,630{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:generate	nil
+2024-03-07 19:22:22,630{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:generate	nil
+2024-03-07 19:22:22,635{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:generate	nil
+2024-03-07 19:22:22,645{GMT}	INFO	[jepsen worker nemesis] jepsen.util: :nemesis	:info	:start-partition	[:isolated {"n2" #{"n1" "n0"}, "n1" #{"n2"}, "n0" #{"n2"}}]
+2024-03-07 19:22:27,636{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:info	:generate	nil	:net-timeout
+2024-03-07 19:22:27,637{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:info	:generate	nil	:net-timeout
+2024-03-07 19:22:27,638{GMT}	INFO	[jepsen worker 1] jepsen.util: 4	:invoke	:generate	nil
+2024-03-07 19:22:27,638{GMT}	INFO	[jepsen worker 0] jepsen.util: 3	:invoke	:generate	nil
+2024-03-07 19:22:27,640{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:info	:generate	nil	:net-timeout
+2024-03-07 19:22:27,642{GMT}	INFO	[jepsen worker 2] jepsen.util: 5	:invoke	:generate	nil
+2024-03-07 19:22:30,791{GMT}	INFO	[jepsen worker nemesis] jepsen.util: :nemesis	:info	:stop-partition	nil
+2024-03-07 19:22:30,795{GMT}	INFO	[jepsen worker nemesis] jepsen.util: :nemesis	:info	:stop-partition	:network-healed
+2024-03-07 19:22:32,160{GMT}	INFO	[Jepsen shutdown hook] jepsen.core: Downloading DB logs before JVM shutdown...

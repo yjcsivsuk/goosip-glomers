@@ -1,0 +1,44 @@
+{:index 0, :time 9120625, :type :info, :process :nemesis, :f :start-partition, :value :minority-third}
+{:index 1, :time 10636084, :type :invoke, :process 1, :f :generate, :value nil}
+{:index 2, :time 12496667, :type :info, :process :nemesis, :f :start-partition, :value [:isolated {"n2" #{}, "n1" #{}, "n0" #{}}]}
+{:index 3, :time 12596709, :type :invoke, :process 2, :f :generate, :value nil}
+{:index 4, :time 14621375, :type :invoke, :process 0, :f :generate, :value nil}
+{:index 5, :time 5028560334, :type :info, :process 2, :f :generate, :value nil, :error :net-timeout}
+{:index 6, :time 5028750709, :type :info, :process 1, :f :generate, :value nil, :error :net-timeout}
+{:index 7, :time 5028786584, :type :invoke, :process 4, :f :generate, :value nil}
+{:index 8, :time 5031932875, :type :info, :process 0, :f :generate, :value nil, :error :net-timeout}
+{:index 9, :time 5032039625, :type :invoke, :process 5, :f :generate, :value nil}
+{:index 10, :time 5041494667, :type :invoke, :process 3, :f :generate, :value nil}
+{:index 11, :time 5611107417, :type :info, :process :nemesis, :f :stop-partition, :value nil}
+{:index 12, :time 5612656459, :type :info, :process :nemesis, :f :stop-partition, :value :network-healed}
+{:index 13, :time 10036105125, :type :info, :process 4, :f :generate, :value nil, :error :net-timeout}
+{:index 14, :time 10036302084, :type :invoke, :process 7, :f :generate, :value nil}
+{:index 15, :time 10049432167, :type :info, :process 5, :f :generate, :value nil, :error :net-timeout}
+{:index 16, :time 10049586500, :type :invoke, :process 8, :f :generate, :value nil}
+{:index 17, :time 10060605500, :type :info, :process 3, :f :generate, :value nil, :error :net-timeout}
+{:index 18, :time 10060920709, :type :invoke, :process 6, :f :generate, :value nil}
+{:index 19, :time 12983466375, :type :info, :process :nemesis, :f :start-partition, :value :majority}
+{:index 20, :time 13011156334, :type :info, :process :nemesis, :f :start-partition, :value [:isolated {"n2" #{"n1" "n0"}, "n1" #{"n2"}, "n0" #{"n2"}}]}
+{:index 21, :time 15048832875, :type :info, :process 7, :f :generate, :value nil, :error :net-timeout}
+{:index 22, :time 15049038167, :type :invoke, :process 10, :f :generate, :value nil}
+{:index 23, :time 15081729625, :type :info, :process 8, :f :generate, :value nil, :error :net-timeout}
+{:index 24, :time 15081930084, :type :invoke, :process 11, :f :generate, :value nil}
+{:index 25, :time 15082249250, :type :info, :process 6, :f :generate, :value nil, :error :net-timeout}
+{:index 26, :time 15083751667, :type :invoke, :process 9, :f :generate, :value nil}
+{:index 27, :time 20074533875, :type :info, :process 10, :f :generate, :value nil, :error :net-timeout}
+{:index 28, :time 20074773167, :type :invoke, :process 13, :f :generate, :value nil}
+{:index 29, :time 20088033542, :type :info, :process 11, :f :generate, :value nil, :error :net-timeout}
+{:index 30, :time 20088211750, :type :info, :process 9, :f :generate, :value nil, :error :net-timeout}
+{:index 31, :time 20088250792, :type :invoke, :process 12, :f :generate, :value nil}
+{:index 32, :time 20093345500, :type :invoke, :process 14, :f :generate, :value nil}
+{:index 33, :time 25085097167, :type :info, :process 13, :f :generate, :value nil, :error :net-timeout}
+{:index 34, :time 25085280042, :type :invoke, :process 16, :f :generate, :value nil}
+{:index 35, :time 25097441125, :type :info, :process 12, :f :generate, :value nil, :error :net-timeout}
+{:index 36, :time 25097615417, :type :invoke, :process 15, :f :generate, :value nil}
+{:index 37, :time 25100744959, :type :info, :process 14, :f :generate, :value nil, :error :net-timeout}
+{:index 38, :time 25101092250, :type :invoke, :process 17, :f :generate, :value nil}
+{:index 39, :time 25859919625, :type :info, :process :nemesis, :f :stop-partition, :value nil}
+{:index 40, :time 25860995375, :type :info, :process :nemesis, :f :stop-partition, :value :network-healed}
+{:index 41, :time 30090735209, :type :info, :process 16, :f :generate, :value nil, :error :net-timeout}
+{:index 42, :time 30104881292, :type :info, :process 15, :f :generate, :value nil, :error :net-timeout}
+{:index 43, :time 30115157167, :type :info, :process 17, :f :generate, :value nil, :error :net-timeout}
