@@ -17,7 +17,7 @@ go mod tidy
 
 其中最后一步在运行之后可能会报错，可以忽略，不影响后续步骤进行。
 
-![截屏2024-02-27 13.37.41](maelstrom运行方法.assets/截屏2024-02-27 13.37.41.png)
+<img width="423" alt="截屏2024-02-27 13 37 41" src="https://github.com/yjcsivsuk/goosip-glomers/assets/96940537/edc40369-fc82-431f-993d-4e94c3563297">
 
 第二步：在刚刚创建的maelstorm-echo文件夹中，新建main.go文件，代码内容就是实验内容。
 
@@ -93,9 +93,9 @@ Everything looks good! ヽ(‘ー`)ノ
 
 以下是运行期间的部分截图：
 
-![截屏2024-03-02 13.27.15](maelstrom运行方法.assets/截屏2024-03-02 13.27.15.png)
+<img width="1065" alt="截屏2024-03-02 13 27 15" src="https://github.com/yjcsivsuk/goosip-glomers/assets/96940537/f61f690b-a4f2-4198-996e-8e40695a0aa5">
 
-![截屏2024-02-27 16.25.36](maelstrom运行方法.assets/截屏2024-02-27 16.25.36.png)
+<img width="724" alt="截屏2024-02-27 16 25 36" src="https://github.com/yjcsivsuk/goosip-glomers/assets/96940537/16865757-6ffc-40e0-8308-9433dc4d1410">
 
 第六步（可选）：可以在浏览器中查看运行记录及日志。
 
@@ -105,10 +105,10 @@ Everything looks good! ヽ(‘ー`)ノ
 
 出现以下消息
 
-![截屏2024-02-27 16.29.24](maelstrom运行方法.assets/截屏2024-02-27 16.29.24.png)
+<img width="581" alt="截屏2024-02-27 16 29 24" src="https://github.com/yjcsivsuk/goosip-glomers/assets/96940537/67b73860-2658-4acc-968d-dc158e33d9f6">
 
 之后在浏览器中打开http://localhost:8080/
 
-![截屏2024-02-27 16.29.43](maelstrom运行方法.assets/截屏2024-02-27 16.29.43.png)
+<img width="599" alt="截屏2024-02-27 16 29 43" src="https://github.com/yjcsivsuk/goosip-glomers/assets/96940537/a16f81f1-4b73-4138-96fc-7a5c30146956">
 
 可以在这里查看更详细的运行情况。
